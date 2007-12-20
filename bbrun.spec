@@ -10,6 +10,7 @@ License: 	GPL
 Group: 		Toys
 Url:		http://www.darkops.net/bbrun
 Source: 	http://www.darkops.net/%{name}/%{name}-%{version}.tar.bz2
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 BuildRequires:	xpm-devel gtk+2-devel
 
 
