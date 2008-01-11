@@ -30,17 +30,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 install -s  bbrun/bbrun $RPM_BUILD_ROOT%{_bindir}
 
-install -m 755 -d $RPM_BUILD_ROOT%_menudir
-cat > $RPM_BUILD_ROOT%_menudir/%name <<EOF
-?package(%name):\
- needs="X11"\
- section="Office/Accessories"\
- title="BB Run"\
- longtitle="BlackBox Run Window"\
- icon="office_accessories_section.png"\
- command="bbrun" \
- xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -66,7 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %files 
 %defattr(-,root,root,0755) 
 %_bindir/*
-%_menudir/*
 %{_datadir}/applications/mandriva-%{name}.desktop
 %doc README Changelog COPYING CREDITS
 
