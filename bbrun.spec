@@ -2,7 +2,7 @@
 %define version		1.6
 %define release		%mkrel 4
 
-Summary:	Bbrun is a run window for Blackbox
+Summary:	Run window for Blackbox
 Name:		%{name}
 Version: 	%{version}
 Release: 	%{release}
