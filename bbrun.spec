@@ -1,6 +1,6 @@
 %define name		bbrun
 %define version		1.6
-%define release		%mkrel 7
+%define release		%mkrel 8
 
 Summary:	Run window for Blackbox
 Name:		%{name}
