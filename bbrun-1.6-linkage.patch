@@ -1,0 +1,11 @@
+diff -urN bbrun-1.6/bbrun/Makefile bbrun-1.6-patched/bbrun/Makefile
+--- bbrun-1.6/bbrun/Makefile	2004-02-11 14:57:17.000000000 +1000
++++ bbrun-1.6-patched/bbrun/Makefile	2012-11-25 00:31:05.690324137 +1100
+@@ -1,6 +1,6 @@
+ CC     = gcc
+ LIBDIR = -L/usr/lib -L/usr/X11R6/lib
+-LIBS   = -lXpm `pkg-config --libs gtk+-2.0`
++LIBS   = -lX11 -lXext -lXpm `pkg-config --libs gtk+-2.0`
+ CFLAGS = `pkg-config --cflags gtk+-2.0`
+ 
+ OBJS   = bbrun.o \
