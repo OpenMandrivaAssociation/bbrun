@@ -1,7 +1,7 @@
 Summary:	Run window for Blackbox
 Name:		bbrun
 Version:	1.6
-Release:	10
+Release:	11
 License:	GPL
 Group: 		Toys
 Url:		http://www.darkops.net/bbrun
