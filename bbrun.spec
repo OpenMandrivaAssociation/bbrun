@@ -4,7 +4,7 @@ Version:	1.6
 Release:	11
 License:	GPL
 Group: 		Toys
-Url:		http://www.darkops.net/bbrun
+Url:		https://www.darkops.net/bbrun
 Source: 	http://www.darkops.net/%{name}/%{name}-%{version}.tar.bz2
 Patch0:		bbrun-1.6-linkage.patch
 BuildRequires:	xpm-devel
